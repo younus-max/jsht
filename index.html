@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/tiltedpage-scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/webfonts.css">
+    <link rel="stylesheet" href="css/demo.css">
+
+    <title>bootstrap_template</title>
+  </head>
+  <body>
+    <!-- counterup -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="count">
+          <h1 class="counters">1,234,567.00</h1>
+        </div>
+      </div>
+       <div class="col-md-4">
+         <div class="count">
+          <h1 class="counters">1,234,567.00</h1>
+        </div>
+       </div>
+        <div class="col-md-4">
+          <div class="count">
+          <h1 class="counters">1,234,567.00</h1>
+        </div>
+        </div>
+    </div>
+  </div>
+  <!-- counterup -->
+  <!-- tiledpage -->
+  <div class="container">
+    <div class="main">
+  <section class="page1">
+  <img src="images/tiltedpage_scroll-master/demo1.jpg" alt="">
+  </section>
+  <section class="page2">
+  <img src="images/tiltedpage_scroll-master/demo2.jpg" alt="">
+  </section>
+  <section class="page3">
+<img src="images/tiltedpage_scroll-master/demo3.jpg" alt="">
+</section>
+  <section class="last-page">
+  <img src="images/tiltedpage_scroll-master/demo4.jpg" alt="">
+  </section>
+</div>
+  </div>
+  <!-- tiledscroll -->
+  <!-- curved text -->
+  <div id="text3"> But, what the heck is that? Well, that's a bezier curve! </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+    
+    <script src="js/bootsrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.tiltedpage-scroll.min.js"></script>
+    <script src="js/jquery.throttle.min.js"></script>
+    <script src="js/jquery.typorize.min.js"></script>
+    <script src="js/jquery.curvedtext.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.counters').counterUp({
+                delay: 10,
+                time: 1000
+            });
+              $(".main").tiltedpage_scroll({
+    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+    angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+    opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+    scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+    outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+  });
+              
+        });
+    </script>
+    
+  </body>
+</html>
